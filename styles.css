@@ -1,116 +1,58 @@
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #f7f9fb, #dbeafe);
-    color: #333;
-    scroll-behavior: smooth;
-}
-
-header {
-    background: linear-gradient(to right, #5B6DCD, #7F9CF5);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    margin: 0.5rem 0 0;
-    font-size: 1.2rem;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 1rem;
-    border-radius: 30px;
-    margin: 1rem auto;
-    width: fit-content;
-}
-
-nav a {
-    color: #5B6DCD;
-    text-decoration: none;
-    margin: 0 1.5rem;
-    font-weight: 600;
-    position: relative;
-}
-
-nav a::after {
-    content: '';
-    display: block;
-    height: 2px;
-    background: #FF7F50;
-    width: 0%;
-    transition: width 0.3s;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-section {
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 800px;
-}
-
-.card {
-    background: #fff;
-    padding: 2rem;
-    margin-top: 1rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-radius: 20px;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-section h2 {
-    color: #5B6DCD;
-    margin-bottom: 1rem;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: #f0f4ff;
-    margin: 0.5rem 0;
-    padding: 0.7rem;
-    border-radius: 10px;
-}
-
-a {
-    color: #FF7F50;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background: #5B6DCD;
-    color: white;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    margin-top: 2rem;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | Freelancer</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A passionate developer with expertise in web development, UI/UX design, and problem-solving. I love creating user-friendly and visually appealing websites.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Angular, Vue.js</li>
+            <li>UI/UX Design</li>
+            <li>Responsive Web Design</li>
+            <li>Backend Development (Node.js, Express)</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio showcasing my work and skills.</p>
+        </div>
+        <div class="project">
+            <h3>E-commerce Platform</h3>
+            <p>A fully functional online store with payment integration.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: <a href="#">yourprofile</a></p>
+        <p>GitHub: <a href="#">github.com/yourusername</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

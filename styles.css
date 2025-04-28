@@ -30,6 +30,22 @@ section {
     padding: 20px;
 }
 
+#about h2 {
+    color: #007BFF; /* Blue for About Me */
+}
+
+#skills h2 {
+    color: #28a745; /* Green for Skills */
+}
+
+#projects h2 {
+    color: #ff5733; /* Orange for Projects */
+}
+
+#contact h2 {
+    color: #6f42c1; /* Purple for Contact */
+}
+
 footer {
     background-color: #333;
     color: white;

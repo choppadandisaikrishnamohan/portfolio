@@ -1,37 +1,116 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f7f9fb, #dbeafe);
+    color: #333;
+    scroll-behavior: smooth;
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(to right, #5B6DCD, #7F9CF5);
     color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-nav ul li {
-    display: inline;
-    margin: 10px;
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 30px;
+    margin: 1rem auto;
+    width: fit-content;
 }
 
 nav a {
+    color: #5B6DCD;
     text-decoration: none;
-    color: black;
+    margin: 0 1.5rem;
+    font-weight: 600;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #FF7F50;
+    width: 0%;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 section {
-    padding: 20px;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+.card {
+    background: #fff;
+    padding: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    color: #5B6DCD;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f0f4ff;
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+
+a {
+    color: #FF7F50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 footer {
-    background-color: #333;
+    text-align: center;
+    padding: 1.5rem;
+    background: #5B6DCD;
     color: white;
-    padding: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: 2rem;
 }
